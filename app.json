@@ -1,0 +1,20 @@
+{
+  "name": "epoint-solution",
+  "description": "EPOINT Solution — landing Next.js",
+  "stack": "heroku-24",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "env": {
+    "NODE_ENV": {
+      "value": "production"
+    }
+  }
+}

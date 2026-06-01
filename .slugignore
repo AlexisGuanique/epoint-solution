@@ -1,0 +1,5 @@
+# No incluir en el slug de Heroku (solo afecta al deploy, no a git)
+.git
+.github
+DEV.md
+HEROKU.md
