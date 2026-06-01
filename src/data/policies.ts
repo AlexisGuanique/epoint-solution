@@ -70,7 +70,7 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
       {
         heading: "Services & Programs",
         paragraphs: [
-          "EPoint Solution provides educational digital resources, marketing and business consulting programs, and related professional services. Program descriptions, pricing, and deliverables are outlined on our website and at the time of purchase.",
+          "EPoint Solution provides professional marketing strategies, targeted advertising consulting, one-on-one mentorship, and related business programs. Program descriptions, pricing, and deliverables are outlined on our website and at the time of purchase.",
           "Results may vary based on individual effort, market conditions, and implementation. We do not guarantee specific financial, marketing, or business outcomes unless expressly stated in writing for a particular engagement.",
         ],
       },
@@ -84,7 +84,7 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
       {
         heading: "Intellectual Property",
         paragraphs: [
-          "All content on this website—including text, graphics, logos, frameworks, guides, and program materials—is owned by EPoint Solution or its licensors and is protected by applicable intellectual property laws.",
+          "All content on this website—including text, graphics, logos, frameworks, playbooks, and program materials—is owned by EPoint Solution or its licensors and is protected by applicable intellectual property laws.",
           "You may not copy, distribute, resell, or create derivative works from our materials without prior written consent, except for personal use as permitted within your purchased program.",
         ],
       },
@@ -384,7 +384,7 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
     effectiveDate,
     intro: [
       "Website: https://epointsolution.com",
-      "At EPoint Solution LLC, we provide educational, digital, and consultative services related to business growth, productivity systems, AI solutions, and strategic development.",
+      "At EPoint Solution LLC, we provide professional marketing strategies, targeted advertising, one-on-one mentorship, and consultative services related to business growth and strategic development.",
       "Please read this Refund & Cancellation Policy carefully before purchasing any service.",
     ],
     sections: [
@@ -422,7 +422,7 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
         subsections: [
           {
             listItems: [
-              "Digital guidebooks, courses, downloads, or educational materials",
+              "Marketing strategy programs, targeted advertising consulting, mentorship sessions, and proprietary frameworks",
               "Coaching, consulting, or strategy sessions (scheduled or completed)",
               "Growth programs, workshops, or structured development plans",
               "Memberships, portals, or proprietary content access",
@@ -467,7 +467,7 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
       {
         heading: "5. No Guarantees Disclaimer",
         paragraphs: [
-          "Eberths Enterprises LLC DBA EPoint Solution LLC provides educational and strategic consulting services.",
+          "Eberths Enterprises LLC DBA EPoint Solution LLC provides professional marketing and strategic consulting services.",
           "We do not guarantee:",
         ],
         subsections: [

@@ -74,8 +74,9 @@ export function Footer() {
                 />
               </div>
               <p className="font-(family-name:--font-roboto) text-sm leading-relaxed text-gray-400">
-                We sell educational digital ebooks to all over the United States
-                customers only.
+                We deliver professional marketing strategies, targeted advertising,
+                and one-on-one mentorship to clients throughout the United States
+                only.
               </p>
             </div>
           </div>

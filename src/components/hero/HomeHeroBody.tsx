@@ -34,7 +34,7 @@ export function HomeHeroBody() {
           <div className="relative aspect-828/440 w-full">
             <Image
               src="/images/hero-suite.png"
-              alt="Epoint Solution Suite — guías de crecimiento y productos digitales"
+              alt="Epoint Solution Suite — marketing strategies, targeted advertising, and mentorship programs"
               fill
               className="object-contain object-center"
               sizes="(max-width: 1024px) 100vw, 576px"

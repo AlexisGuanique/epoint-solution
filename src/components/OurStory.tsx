@@ -23,21 +23,19 @@ export function OurStory({ showButton = true }: OurStoryProps) {
               </h2>
               <div className="mt-4 space-y-4 font-(family-name:--font-roboto) text-base leading-relaxed text-gray-600">
                 <p>
-                  With over a decade of experience helping individuals improve their
-                  professional growth profile and overall qualification standing,
-                  I&apos;ve seen how many programs rely on shortcuts that don&apos;t
-                  create real, lasting progress. That&apos;s why I created Freedom
-                  Growth a transparent system built on proven strategies and
-                  long-term results.
+                  With over a decade of experience helping entrepreneurs and small
+                  businesses scale, I&apos;ve seen how many programs rely on shortcuts
+                  that don&apos;t create real, lasting progress. That&apos;s why I built
+                  EPoint Solution—a transparent approach grounded in professional
+                  marketing strategies, targeted advertising, and one-on-one
+                  mentorship.
                 </p>
                 <p>
-                  These guide books is designed for individuals and business owners
-                  who are tired of empty promises and want to strengthen their
-                  personal standing, unlock new opportunities, and gain real
-                  financial education. In addition to structured improvement
-                  methods, you&apos;ll receive practical training and step-by-step
-                  guidance that teaches you how qualification systems work and how
-                  to maintain long-term stability and independence.
+                  Our programs are designed for individuals and business owners who
+                  want measurable growth—not empty promises. You receive practical
+                  marketing frameworks, campaign guidance, and dedicated mentorship
+                  to strengthen your brand, reach the right audience, and build
+                  long-term stability with clarity and confidence.
                 </p>
               </div>
               {showButton ? (

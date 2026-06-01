@@ -13,7 +13,7 @@ const cardMotion = [
 ];
 
 type PremiumGuidesProps = {
-  /** Muestra el título "OUR PREMIUM GUIDES" (home). En /shop el hero ya lleva el título. */
+  /** Muestra el título "OUR PREMIUM PROGRAMS" (home). En /shop el hero ya lleva el título. */
   showHeading?: boolean;
   /** home: 4 columnas en desktop; page: cuadrícula 2×2 */
   layout?: "home" | "page";
@@ -34,7 +34,7 @@ export function PremiumGuides({
         {showHeading ? (
           <AnimateOnScroll direction="up">
             <h2 className="text-center font-(family-name:--font-poppins) text-2xl font-bold uppercase text-[#0D141A] sm:text-3xl md:text-4xl">
-              OUR PREMIUM GUIDES
+              OUR PREMIUM PROGRAMS
             </h2>
           </AnimateOnScroll>
         ) : null}

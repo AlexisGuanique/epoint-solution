@@ -26,13 +26,13 @@ export const productTabContent = {
       tagline: "Learn. Implement. Accelerate.",
       paragraphs: [
         "The Accelerated Digital Marketing Education Platform by Epoint Solution is a comprehensive roadmap designed to help entrepreneurs and business owners achieve structured, sustainable expansion. This platform delivers specialized digital marketing resources, modern frameworks, and live, interactive consulting sessions to increase revenue, strengthen operations, and build a scalable business foundation.",
-        "Whether you're launching, stabilizing, or scaling, this guide provides the clarity and direction needed to drive consistent growth.",
+        "Whether you're launching, stabilizing, or scaling, this program provides the clarity and direction needed to drive consistent growth.",
       ],
     },
     tabDescription: {
       tagline: "Build Skills. Optimize Infrastructure. Maximize Growth.",
       paragraphs: [
-        "The Accelerated Digital Marketing Education Platform by Epoint Solution is an elite, digital-first training ecosystem designed to help entrepreneurs and small business owners achieve rapid, sustainable growth. Delivered electronically through live, interactive consulting sessions, private online meetings, and direct digital resources, this comprehensive platform combines structured educational modules with personal guidance to fully optimize your digital infrastructure and maximize operational performance from day one.",
+        "The Accelerated Digital Marketing Education Platform by Epoint Solution is an elite, digital-first training ecosystem designed to help entrepreneurs and small business owners achieve rapid, sustainable growth. Delivered through live, interactive consulting sessions, private online meetings, and direct resources, this comprehensive platform combines professional marketing strategies, targeted advertising frameworks, and one-on-one mentorship to fully optimize your digital infrastructure and maximize operational performance from day one.",
         "Whether you are launching your brand or modernizing your entire marketing framework, this professional program provides the immediate clarity, technical direction, and mentorship needed to scale your business with absolute confidence.",
       ],
       whatsIncludedHeading: "What You'll Learn:",
@@ -73,7 +73,7 @@ export const productTabContent = {
       expectedOutcomes: [
         "Immediate digital access to specialized resources and frameworks.",
         "Live, interactive consulting sessions for real-time strategic adjustment.",
-        "Structured educational modules paired with personalized, expert guidance.",
+        "Structured marketing modules paired with personalized, expert mentorship.",
         "Complete optimization of your brand's digital infrastructure from day one.",
         "Sustainable long-term expansion powered by modern marketing education.",
       ],

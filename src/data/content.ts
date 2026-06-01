@@ -51,7 +51,7 @@ export const offers = [
     tagline: "Learn, Apply, Grow.",
     title: "ACCELERATED DIGITAL MARKETING EDUCATION PLATFORM",
     description:
-      "Gain immediate access to specialized digital marketing resources, modern frameworks, and live, interactive consulting sessions. Perfect for entrepreneurs seeking rapid skill acquisition, this program combines structured educational modules with personal guidance to optimize your digital infrastructure and maximize operational growth from day one.",
+      "Gain immediate access to professional marketing strategies, targeted advertising frameworks, and live, interactive consulting sessions. Perfect for entrepreneurs seeking rapid skill acquisition, this program combines structured marketing modules with one-on-one mentorship to optimize your digital infrastructure and maximize operational growth from day one.",
     rating: "4.9 rating from business owners",
     icon: "laptop",
   },

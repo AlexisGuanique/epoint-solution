@@ -168,7 +168,7 @@ export function ProductGuidesCarousel({
     <section className="border-t border-gray-100 bg-white px-4 py-12 md:px-6 md:py-16">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center font-(family-name:--font-poppins) text-2xl font-bold uppercase text-[#0D141A] sm:text-3xl md:text-4xl">
-          OUR PREMIUM GUIDES
+          OUR PREMIUM PROGRAMS
         </h2>
 
         <div className="relative mt-8 px-10 sm:mt-10 sm:px-12 md:px-14">
