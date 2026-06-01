@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #2d1b0f;
+  --color-cream: #f8f4ed;
+  --color-cream-card: #f0ebe1;
+  --color-heading: #0d141a;
+  --color-accent-text: #ece9d8;
+}
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@keyframes cart-button-success {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes cart-badge-pop {
+  0% {
+    transform: scale(0.5);
+  }
+  55% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cart-icon-pop {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-12deg) scale(1.12);
+  }
+  75% {
+    transform: rotate(8deg) scale(1.08);
+  }
+}
+
+@keyframes cart-check-splash-ring {
+  0% {
+    transform: scale(0.35);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+@keyframes cart-check-splash-dot {
+  0% {
+    transform: rotate(var(--splash-angle)) translateY(0) scale(1);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: rotate(var(--splash-angle)) translateY(-11px) scale(0.15);
+    opacity: 0;
+  }
+}
+
+.cart-check-splash-ring {
+  pointer-events: none;
+  position: absolute;
+  inset: -4px;
+  border-radius: 9999px;
+  border: 2px solid rgba(196, 240, 178, 0.9);
+  background: rgba(168, 230, 160, 0.35);
+  animation: cart-check-splash-ring 0.55s ease-out forwards;
+}
+
+.cart-check-splash-dot {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -2px;
+  margin-top: -2px;
+  height: 4px;
+  width: 4px;
+  border-radius: 9999px;
+  background: #c4f0b2;
+  box-shadow: 0 0 6px rgba(196, 240, 178, 0.8);
+  animation: cart-check-splash-dot 0.5s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-cart-button-success {
+    animation: cart-button-success 0.45s ease-out forwards;
+  }
+
+  .animate-cart-badge-pop {
+    animation: cart-badge-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  .animate-cart-icon-pop {
+    animation: cart-icon-pop 0.55s ease-out forwards;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cart-check-splash-ring,
+  .cart-check-splash-dot {
+    animation: none;
+    opacity: 0;
+  }
+}
