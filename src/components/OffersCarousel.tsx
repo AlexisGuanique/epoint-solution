@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
-import { RefundPolicyNotice } from "@/components/RefundPolicyNotice";
 import { useVisibleCount } from "@/hooks/useVisibleCount";
 import { offers } from "@/data/content";
 
@@ -251,9 +250,7 @@ export function OffersCarousel() {
           </button>
         </div>
 
-        <AnimateOnScroll direction="up" delay={120} className="mx-auto mt-8 max-w-3xl">
-          <RefundPolicyNotice variant="dark" className="text-left" />
-        </AnimateOnScroll>
+
 
         <div className="mt-6 flex justify-center gap-2">
           {offers.map((offer, i) => (
