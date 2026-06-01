@@ -147,7 +147,7 @@ export function Footer() {
                   className="mt-0.5 size-4 shrink-0 text-white/90"
                   aria-hidden
                 />
-                <span>5750 S Semoran Blvd, Orlando FL 32822</span>
+                <span>{contactInfo.address}</span>
               </p>
 
               {socialConfig.linkedInUrl ? (

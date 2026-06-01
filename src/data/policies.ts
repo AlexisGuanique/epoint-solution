@@ -1,3 +1,7 @@
+import { contactInfo } from "@/data/content";
+
+const companyAddress = contactInfo.address;
+
 export type PolicySubsection = {
   subheading?: string;
   paragraphs?: readonly string[];
@@ -98,7 +102,7 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
       {
         heading: "Contact",
         paragraphs: [
-          "For questions regarding these Terms of Service, contact us at support@epointsolution.com or by mail at 5750 S Semoran Blvd, Orlando FL 32822.",
+          `For questions regarding these Terms of Service, contact us at support@epointsolution.com or by mail at ${companyAddress}.`,
         ],
       },
     ],
@@ -361,8 +365,7 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
           {
             listItems: [
               "Eberths Enterprises LLC DBA EPoint Solution LLC",
-              "6663 Narcoossee Rd, Suite 166",
-              "Orlando, FL 32822",
+              companyAddress,
               "United States",
               "(407) 668-7889",
               "support@epointsolution.com",
@@ -492,11 +495,7 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
           },
           {
             subheading: "Address:",
-            listItems: [
-              "6663 Narcoossee RD",
-              "Suite 166",
-              "Orlando, FL 32822",
-            ],
+            listItems: [companyAddress],
           },
         ],
       },

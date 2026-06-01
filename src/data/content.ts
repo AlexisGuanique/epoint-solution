@@ -213,7 +213,7 @@ export const contactInfo = {
     display: "support@epointsolution.com",
     href: "mailto:support@epointsolution.com",
   },
-  address: "5750 S Semoran Blvd Orlando FL 32822",
+  address: "5750 S Semoran Blvd, Orlando FL 32822",
 } as const;
 
 export const contactFormCopy = {
