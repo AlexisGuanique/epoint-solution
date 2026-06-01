@@ -2,6 +2,8 @@
 
 import { FormEvent, useState } from "react";
 import { HiEnvelope, HiMapPin, HiPhone } from "react-icons/hi2";
+import { LinkedInLink } from "@/components/LinkedInLink";
+import { socialConfig } from "@/config/social";
 import { contactFormCopy, contactInfo } from "@/data/content";
 
 const inputClassName =
@@ -23,12 +25,17 @@ function ContactInfoPanel() {
     {
       icon: HiEnvelope,
       content: (
-        <a
-          href={contactInfo.email.href}
-          className="transition-opacity hover:opacity-90"
-        >
-          {contactInfo.email.display}
-        </a>
+        <div className="flex flex-col gap-1">
+          {contactInfo.emails.map((email) => (
+            <a
+              key={email.display}
+              href={email.href}
+              className="transition-opacity hover:opacity-90"
+            >
+              {email.display}
+            </a>
+          ))}
+        </div>
       ),
     },
     {
@@ -64,6 +71,23 @@ function ContactInfoPanel() {
             </li>
           );
         })}
+        {socialConfig.linkedInUrl ? (
+          <li>
+            <span
+              className="mb-7 block h-px bg-white/20 sm:mb-8 lg:mb-10"
+              aria-hidden
+            />
+            <div className="flex items-start gap-3 font-(family-name:--font-roboto) text-sm leading-relaxed sm:text-base">
+              <span
+                className="mt-0.5 flex size-5 shrink-0 items-center justify-center text-xs font-bold text-white/90"
+                aria-hidden
+              >
+                in
+              </span>
+              <LinkedInLink className="transition-opacity hover:opacity-90" />
+            </div>
+          </li>
+        ) : null}
       </ul>
     </div>
   );

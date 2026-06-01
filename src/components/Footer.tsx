@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HiEnvelope, HiMapPin, HiPhone } from "react-icons/hi2";
+import { LinkedInLink } from "@/components/LinkedInLink";
+import { socialConfig } from "@/config/social";
 import {
+  contactInfo,
   footerPolicies,
   footerQuickLinks,
 } from "@/data/content";
@@ -111,14 +114,14 @@ export function Footer() {
               </p>
 
               <a
-                href="tel:+16892193665"
+                href={contactInfo.phone.href}
                 className="flex items-start gap-2.5 transition-colors hover:text-white"
               >
                 <HiPhone
                   className="mt-0.5 size-4 shrink-0 text-white/90"
                   aria-hidden
                 />
-                <span>+1 689 219 3665</span>
+                <span>{contactInfo.phone.display}</span>
               </a>
 
               <div className="flex items-start gap-2.5">
@@ -127,18 +130,15 @@ export function Footer() {
                   aria-hidden
                 />
                 <div className="flex flex-col gap-1">
-                  <a
-                    href="mailto:support@epointsolution.com"
-                    className="transition-colors hover:text-white"
-                  >
-                    support@epointsolution.com
-                  </a>
-                  <a
-                    href="mailto:eberths@epointsolution.com"
-                    className="transition-colors hover:text-white"
-                  >
-                    eberths@epointsolution.com
-                  </a>
+                  {contactInfo.emails.map((email) => (
+                    <a
+                      key={email.display}
+                      href={email.href}
+                      className="transition-colors hover:text-white"
+                    >
+                      {email.display}
+                    </a>
+                  ))}
                 </div>
               </div>
 
@@ -149,6 +149,18 @@ export function Footer() {
                 />
                 <span>5750 S Semoran Blvd, Orlando FL 32822</span>
               </p>
+
+              {socialConfig.linkedInUrl ? (
+                <p className="flex items-start gap-2.5">
+                  <span
+                    className="mt-0.5 flex size-4 shrink-0 items-center justify-center text-xs font-bold text-white/90"
+                    aria-hidden
+                  >
+                    in
+                  </span>
+                  <LinkedInLink className="transition-colors hover:text-white" />
+                </p>
+              ) : null}
             </div>
           </div>
         </div>

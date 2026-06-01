@@ -4,27 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { HiMinus, HiPlus, HiTrash, HiXMark } from "react-icons/hi2";
 import { useCart } from "@/context/CartContext";
+import { buildCheckoutMailto } from "@/lib/checkout";
 import { formatCents } from "@/lib/cart";
-import { contactInfo } from "@/data/content";
-
-function buildCheckoutMailto(
-  items: ReturnType<typeof useCart>["items"],
-  totalCents: number
-) {
-  const lines = items.map(
-    (item) =>
-      `- ${item.title} x${item.quantity} — ${formatCents(item.priceCents * item.quantity)}`
-  );
-  const body = [
-    "Hello, I would like to complete my purchase:",
-    "",
-    ...lines,
-    "",
-    `Total: ${formatCents(totalCents)}`,
-  ].join("\n");
-
-  return `mailto:${contactInfo.email.display}?subject=${encodeURIComponent("EPoint Solution — Cart Checkout")}&body=${encodeURIComponent(body)}`;
-}
 
 export function CartModal() {
   const {
@@ -179,7 +160,7 @@ export function CartModal() {
               onClick={closeCart}
               className="mt-4 flex w-full items-center justify-center rounded-xl bg-[#2D1B0F] px-6 py-3.5 font-(family-name:--font-poppins) text-sm font-bold uppercase tracking-wide text-white transition hover:bg-[#3D2817]"
             >
-              Proceed to Checkout
+              Proceed to Pay
             </a>
             <Link
               href="/shop"

@@ -1,9 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
+import { RefundPolicyNotice } from "@/components/RefundPolicyNotice";
 import { useVisibleCount } from "@/hooks/useVisibleCount";
-import { disclaimer, offers } from "@/data/content";
+import { offers } from "@/data/content";
 
 const OFFER_COUNT = offers.length;
 const CARD_GAP_PX = 10;
@@ -43,23 +45,11 @@ function OfferIcon({ type }: { type: string }) {
   }
 }
 
-function Stars() {
-  return (
-    <div className="flex justify-center gap-0.5 text-amber-500">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <span key={i} className="text-sm">
-          ★
-        </span>
-      ))}
-    </div>
-  );
-}
-
 type Offer = (typeof offers)[number];
 
 function OfferCard({ offer }: { offer: Offer }) {
   return (
-    <article className="flex h-full min-h-[520px] w-full flex-col rounded-2xl bg-[#F0EBE1] px-3 py-5 text-center sm:min-h-[540px] sm:px-3.5 sm:py-6 md:min-h-[560px]">
+    <article className="flex h-full min-h-[460px] w-full flex-col rounded-2xl bg-[#F0EBE1] px-3 py-5 text-center sm:min-h-[480px] sm:px-3.5 sm:py-6 md:min-h-[500px]">
       <div className="mx-auto mb-4 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#2D1B0F] sm:h-16 sm:w-16">
         <OfferIcon type={offer.icon} />
       </div>
@@ -76,19 +66,12 @@ function OfferCard({ offer }: { offer: Offer }) {
         {offer.description}
       </p>
 
-      <a
-        href="/shop"
+      <Link
+        href={`/shop/${offer.id}`}
         className="mt-4 inline-block rounded-full bg-[#2D1B0F] px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-[#3D2817]"
       >
         Get Started
-      </a>
-
-      <div className="mt-3 flex flex-col items-center gap-0.5">
-        <Stars />
-        <p className="font-(family-name:--font-poppins) text-xs text-black sm:text-sm">
-          {offer.rating}
-        </p>
-      </div>
+      </Link>
     </article>
   );
 }
@@ -268,12 +251,8 @@ export function OffersCarousel() {
           </button>
         </div>
 
-        <AnimateOnScroll direction="up" delay={120} className="mx-auto mt-8 max-w-2xl">
-          <div className="text-center text-sm leading-relaxed text-[#ECE9D8]/85 sm:text-base">
-            <p className="font-semibold text-[#ECE9D8]">{disclaimer.title}</p>
-            <p className="mt-1">{disclaimer.refund}</p>
-            <p className="mt-1">{disclaimer.terms}</p>
-          </div>
+        <AnimateOnScroll direction="up" delay={120} className="mx-auto mt-8 max-w-3xl">
+          <RefundPolicyNotice variant="dark" className="text-left" />
         </AnimateOnScroll>
 
         <div className="mt-6 flex justify-center gap-2">

@@ -14,8 +14,6 @@ export type ShopProduct = {
   reviewCount: number;
   summary?: ProductSummary;
   tabDescription: ProductTabDescription;
-  refundPolicy: string;
-  termsNote: string;
 };
 
 export const offers = [
@@ -25,7 +23,6 @@ export const offers = [
     title: "STRATEGIC MARKETING & BRANDING BLUEPRINT",
     description:
       "Acquire a comprehensive, data-driven marketing strategy and elite branding assistance tailored to your business goals. Designed for small businesses and entrepreneurs, this program builds a powerful market position, enhances brand identity, and outlines clear campaign deployment maps to scale your business with total confidence.",
-    rating: "4.9 rating from growth-driven",
     icon: "chart",
   },
   {
@@ -34,7 +31,6 @@ export const offers = [
     title: "HIGH-CONVERSION ADVERTISING & LEAD GENERATION GUIDANCE",
     description:
       "Master your customer acquisition with custom advertising consulting and tactical lead generation frameworks. We guide you step-by-step through campaign asset development, audience targeting, and distribution efficiency to secure a consistent flow of high-quality prospects directly into your sales pipeline.",
-    rating: "4.9 rating from ambitious leaders",
     icon: "target",
   },
   {
@@ -43,7 +39,6 @@ export const offers = [
     title: "12-MONTH ELITE MENTORSHIP & BUSINESS CONSULTING PROGRAM",
     description:
       "A premium, year-long partnership featuring monthly business consulting, one-on-one coaching, and dedicated mentorship sessions. Delivered entirely through private video calls, online meetings, and direct communications, this flagship program provides continuous execution support, scalable operations advice, and executive accountability for driven business founders.",
-    rating: "4.9 rating from business owners",
     icon: "handshake",
   },
   {
@@ -52,16 +47,9 @@ export const offers = [
     title: "ACCELERATED DIGITAL MARKETING EDUCATION PLATFORM",
     description:
       "Gain immediate access to professional marketing strategies, targeted advertising frameworks, and live, interactive consulting sessions. Perfect for entrepreneurs seeking rapid skill acquisition, this program combines structured marketing modules with one-on-one mentorship to optimize your digital infrastructure and maximize operational growth from day one.",
-    rating: "4.9 rating from business owners",
     icon: "laptop",
   },
 ] as const;
-
-const productPolicies = {
-  refundPolicy:
-    "Refund/cancellation policy: You may request a cancellation and refund within three (3) days.",
-  termsNote: "Terms of Service: Results may vary. We do not guarantee results.",
-} as const;
 
 export const products: ShopProduct[] = [
   {
@@ -74,7 +62,6 @@ export const products: ShopProduct[] = [
     reviewCount: productTabContent["digital-education"].reviewCount,
     summary: productTabContent["digital-education"].summary,
     tabDescription: productTabContent["digital-education"].tabDescription,
-    ...productPolicies,
   },
   {
     id: "strategic-marketing",
@@ -85,7 +72,6 @@ export const products: ShopProduct[] = [
     imageDetail: "/images/guides/strategic-marketing-detail.png",
     reviewCount: productTabContent["strategic-marketing"].reviewCount,
     tabDescription: productTabContent["strategic-marketing"].tabDescription,
-    ...productPolicies,
   },
   {
     id: "advertising-leads",
@@ -97,7 +83,6 @@ export const products: ShopProduct[] = [
     reviewCount: productTabContent["advertising-leads"].reviewCount,
     summary: productTabContent["advertising-leads"].summary,
     tabDescription: productTabContent["advertising-leads"].tabDescription,
-    ...productPolicies,
   },
   {
     id: "elite-mentorship",
@@ -109,7 +94,6 @@ export const products: ShopProduct[] = [
     reviewCount: productTabContent["elite-mentorship"].reviewCount,
     summary: productTabContent["elite-mentorship"].summary,
     tabDescription: productTabContent["elite-mentorship"].tabDescription,
-    ...productPolicies,
   },
 ];
 
@@ -178,14 +162,6 @@ export const articles = [
   },
 ] as const;
 
-export const disclaimer = {
-  title: "Disclaimer:",
-  refund:
-    "Refund/cancellation policy: You may request a cancellation and refund within three (3)days.",
-  terms:
-    "Terms of Service and Privacy Policy: Results may vary, We do not guarantee results.",
-};
-
 export const navLinks = [
   { label: "Home", href: "/", view: "home" },
   { label: "About us", href: "/about", view: "about" },
@@ -208,11 +184,31 @@ export const footerPolicies = [
   { label: "Terms Of Service", href: "/policies/terms-of-service" },
 ] as const;
 
+/**
+ * Página de empresa en LinkedIn. También puedes usar NEXT_PUBLIC_LINKEDIN_URL en .env.local.
+ * Requerido para revisión de procesadores de pago (Square, etc.).
+ */
+export const linkedInCompany = {
+  href: "https://www.linkedin.com/company/eberths-enterprises-llc/",
+  label: "Eberths Enterprises LLC on LinkedIn",
+} as const;
+
 export const contactInfo = {
   phone: {
-    display: "+1(407) 675-0860",
-    href: "tel:+14076750860",
+    display: "(407) 668-7889",
+    href: "tel:+14076687889",
   },
+  emails: [
+    {
+      display: "support@epointsolution.com",
+      href: "mailto:support@epointsolution.com",
+    },
+    {
+      display: "eberths@epointsolution.com",
+      href: "mailto:eberths@epointsolution.com",
+    },
+  ] as const,
+  /** Correo principal (checkout, formularios). */
   email: {
     display: "support@epointsolution.com",
     href: "mailto:support@epointsolution.com",

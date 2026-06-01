@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { AnimateIn } from "@/components/AnimateIn";
 
 export function HomeHeroBody() {
@@ -20,12 +21,12 @@ export function HomeHeroBody() {
           </p>
         </AnimateIn>
         <AnimateIn direction="up" delay={520}>
-          <button
-            type="button"
-            className="mt-8 w-fit rounded-lg bg-[#432F23] px-8 py-3.5 font-(family-name:--font-roboto) text-sm font-semibold text-white transition-opacity hover:opacity-90 md:mt-10"
+          <Link
+            href="/shop"
+            className="mt-8 inline-block w-fit rounded-lg bg-[#432F23] px-8 py-3.5 font-(family-name:--font-roboto) text-sm font-semibold text-white transition-opacity hover:opacity-90 md:mt-10"
           >
             Shop Now
-          </button>
+          </Link>
         </AnimateIn>
       </div>
 

@@ -505,17 +505,39 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
               "Reason for cancellation or refund request",
             ],
           },
+          {
+            paragraphs: [
+              "We will acknowledge your request within two (2) business days and provide a written decision once our review is complete.",
+            ],
+          },
         ],
       },
       {
-        heading: "7. Policy Updates",
+        heading: "7. Payment, Billing & Refund Method",
+        paragraphs: [
+          "All program fees are charged as stated at checkout or in your signed service agreement.",
+          "Approved refunds are returned to the original payment method used for the purchase.",
+          "Processing times depend on your bank or card issuer and typically take 5–10 business days after approval.",
+          "Administrative or payment-processing fees may apply where permitted and will be disclosed before any partial refund is issued.",
+        ],
+      },
+      {
+        heading: "8. Chargebacks & Billing Disputes",
+        paragraphs: [
+          "If you believe a charge is incorrect, contact us at support@epointsolution.com before initiating a chargeback so we can resolve the issue directly.",
+          "Filing a chargeback without first contacting us may delay access to services while the dispute is investigated.",
+          "We reserve the right to provide transaction records and service delivery documentation to your payment processor as part of a dispute review.",
+        ],
+      },
+      {
+        heading: "9. Policy Updates",
         paragraphs: [
           "We reserve the right to update or modify this policy at any time.",
           "Continued use of our website or services constitutes acceptance of any revised policy.",
         ],
       },
       {
-        heading: "8. Contact Information",
+        heading: "10. Contact Information",
         subsections: [
           {
             paragraphs: ["Eberths Enterprises LLC DBA EPoint Solution LLC"],

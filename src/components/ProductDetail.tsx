@@ -6,6 +6,7 @@ import { useState } from "react";
 import { HiMagnifyingGlassPlus } from "react-icons/hi2";
 import { ProductDetailTabs } from "@/components/ProductDetailTabs";
 import { ProductGuidesCarousel } from "@/components/ProductGuidesCarousel";
+import { RefundPolicyNotice } from "@/components/RefundPolicyNotice";
 import { AddToCartButton } from "@/components/AddToCartButton";
 import { productActionButtonOutline } from "@/components/productActionButtonStyles";
 import { useCart } from "@/context/CartContext";
@@ -163,10 +164,10 @@ export function ProductDetail({ product }: ProductDetailProps) {
               ))}
             </div>
 
-            <div className="mt-6 space-y-3 font-(family-name:--font-roboto) text-sm leading-relaxed text-gray-500">
-              <p>{product.refundPolicy}</p>
-              <p>{product.termsNote}</p>
-            </div>
+            <RefundPolicyNotice
+              context="product"
+              className="mt-6 rounded-xl border border-gray-100 bg-[#F9F7F2] p-4 sm:p-5"
+            />
           </div>
         </div>
 
