@@ -5,10 +5,10 @@ import { formatCents } from "@/lib/cart";
 
 function getProductDescription(productId: string): string {
   const tab = productTabContent[productId as keyof typeof productTabContent];
-  if (tab?.summary?.paragraphs[0]) {
+  if (tab && "summary" in tab && tab.summary.paragraphs[0]) {
     return tab.summary.paragraphs[0];
   }
-  if (tab?.tabDescription?.paragraphs[0]) {
+  if (tab?.tabDescription.paragraphs[0]) {
     return tab.tabDescription.paragraphs[0];
   }
   const product = products.find((p) => p.id === productId);
