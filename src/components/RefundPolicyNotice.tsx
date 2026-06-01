@@ -71,7 +71,7 @@ export function RefundPolicyNotice({
         </Link>
         {isProduct
           ? " for complete terms."
-          : " for eligibility, non-refundable services, session cancellations, and how to submit a request."}
+          : " for complete non-refundable terms, session policies, and billing inquiries."}
       </p>
       <p className={`mt-3 text-sm ${styles.terms}`}>{termsHighlight}</p>
     </div>

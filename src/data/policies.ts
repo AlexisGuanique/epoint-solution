@@ -364,7 +364,7 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
               "6663 Narcoossee Rd, Suite 166",
               "Orlando, FL 32822",
               "United States",
-              "+1 (689) 219-3665",
+              "(407) 668-7889",
               "support@epointsolution.com",
               "eberths@epointsolution.com",
               "https://epointsolution.com",
@@ -389,36 +389,14 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
     ],
     sections: [
       {
-        heading: "1. Right to Cancel – 3-Day Cooling-Off Period",
+        heading: "1. All Sales Are Final — Non-Refundable",
         paragraphs: [
-          "You may request a cancellation and refund within three (3) days of signing an agreement or completing your purchase.",
-          "To submit a cancellation request, email:",
-          "support@epointsolution.com",
-        ],
-        subsections: [
-          {
-            subheading: "Eligibility Requirements",
-            paragraphs: [
-              "To qualify for a refund under the 3-day cancellation period:",
-            ],
-            listItems: [
-              "Your request must be submitted within 72 hours (3 days) of signing or purchase.",
-              "You must not have accessed, downloaded, or used any proprietary digital content.",
-              "You must not have scheduled or attended any coaching, consultation, or strategy session.",
-            ],
-          },
-          {
-            paragraphs: [
-              "If all conditions are met, your refund request will be reviewed and processed accordingly.",
-            ],
-          },
+          "All programs, services, and digital products offered by EPoint Solution LLC are non-refundable.",
+          "By completing your purchase or signing a service agreement, you acknowledge that your sale is final and that no refunds or cancellations will be issued once payment is completed, except where required by applicable law.",
         ],
       },
       {
-        heading: "2. Non-Refundable Services",
-        paragraphs: [
-          "After the 3-day cancellation period expires, all sales are final and non-refundable, including but not limited to:",
-        ],
+        heading: "2. Non-Refundable Services Include",
         subsections: [
           {
             listItems: [
@@ -430,30 +408,16 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
           },
           {
             paragraphs: [
-              "Once services have been accessed, delivered, or initiated, refunds will not be issued.",
+              "Once payment is completed, or once services have been accessed, delivered, or initiated, refunds will not be issued.",
             ],
           },
         ],
       },
       {
-        heading: "3. Exceptions & Company Discretion",
+        heading: "3. Billing Errors Only",
         paragraphs: [
-          "Refunds may be considered at the company's sole discretion in limited situations, including:",
-        ],
-        subsections: [
-          {
-            listItems: [
-              "Services were clearly not delivered as described",
-              "A technical or administrative error occurred",
-            ],
-          },
-          {
-            subheading: "Approved refunds:",
-            listItems: [
-              "May be subject to a reasonable administrative or processing fee",
-              "May take 5–10 business days to process",
-            ],
-          },
+          "If you were charged in error (duplicate charge, incorrect amount, or unauthorized transaction), contact us promptly at support@epointsolution.com with your full name, email used for purchase, date of charge, and transaction details.",
+          "Verified billing errors may be corrected at our sole discretion. This does not constitute a general right to cancel or receive a refund for purchased services.",
         ],
       },
       {
@@ -489,40 +453,14 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
         ],
       },
       {
-        heading: "6. How to Request a Refund or Cancellation",
-        paragraphs: [
-          "To submit a request, email:",
-          "support@epointsolution.com",
-          "Please include:",
-        ],
-        subsections: [
-          {
-            listItems: [
-              "Full Name",
-              "Email used for purchase",
-              "Date of purchase or agreement",
-              "Service purchased",
-              "Reason for cancellation or refund request",
-            ],
-          },
-          {
-            paragraphs: [
-              "We will acknowledge your request within two (2) business days and provide a written decision once our review is complete.",
-            ],
-          },
-        ],
-      },
-      {
-        heading: "7. Payment, Billing & Refund Method",
+        heading: "6. Payment & Billing",
         paragraphs: [
           "All program fees are charged as stated at checkout or in your signed service agreement.",
-          "Approved refunds are returned to the original payment method used for the purchase.",
-          "Processing times depend on your bank or card issuer and typically take 5–10 business days after approval.",
-          "Administrative or payment-processing fees may apply where permitted and will be disclosed before any partial refund is issued.",
+          "You are responsible for providing accurate contact and billing information at the time of purchase.",
         ],
       },
       {
-        heading: "8. Chargebacks & Billing Disputes",
+        heading: "7. Chargebacks & Billing Disputes",
         paragraphs: [
           "If you believe a charge is incorrect, contact us at support@epointsolution.com before initiating a chargeback so we can resolve the issue directly.",
           "Filing a chargeback without first contacting us may delay access to services while the dispute is investigated.",
@@ -530,14 +468,14 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
         ],
       },
       {
-        heading: "9. Policy Updates",
+        heading: "8. Policy Updates",
         paragraphs: [
           "We reserve the right to update or modify this policy at any time.",
           "Continued use of our website or services constitutes acceptance of any revised policy.",
         ],
       },
       {
-        heading: "10. Contact Information",
+        heading: "9. Contact Information",
         subsections: [
           {
             paragraphs: ["Eberths Enterprises LLC DBA EPoint Solution LLC"],
@@ -550,7 +488,7 @@ export const policyPages: Record<PolicySlug, PolicyPageData> = {
             ],
           },
           {
-            paragraphs: ["Phone: +1 689 219 3665"],
+            paragraphs: ["Phone: (407) 668-7889"],
           },
           {
             subheading: "Address:",
